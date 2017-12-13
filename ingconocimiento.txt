@@ -1,0 +1,118 @@
+1.- Programa para generar un árbol de estructuras de ventas por tienda y productos
+<Xbd>
+<operaciones>
+<ventas>
+     <tienda> A </tienda>
+     <producto> X </producto>
+     <producto> Y</producto>
+     <tienda> B </tiendas>
+    <producto> X </producto>
+    <producto> Y</producto>
+ </ventas>
+</operaciones>
+</Xbd>
+XLST generado:
+<Xproba>
+<árbol nbarbol = “ventas” frecuencia=’9’>
+<dimensión nbdimension=” tienda”>
+<valor nbvalor = “A” frecuencia = ‘6’>
+<dimensión nbdimension = “producto”>
+<valor nbvalor = “X” frecuencia ‘5’/>
+<valor nbvalor = “Y” frecuencia ‘1’/>
+</dimensión>
+<valor nbvalor= “B” frecuencia = ‘3’>
+<dimensión nbdimension = “producto”>
+<valor nbvalor = “X” frecuencia=’2’></dimensión>
+<valor nbvalor = “Y” frecuencia=’1’></dimensión>
+<Xproba>
+
+
+2.- Impuestos sobre Automóviles nuevos (ISAN)
+<metodos>
+<método nbmetodo= “m1”>
+<decision>
+<condicion> precio menorque 80000 </condición>
+<verdadero>
+<método nbmetodo =”m2”>
+<Asignacion>
+<atributo> Lim sup</atributo>
+<operando> 80000<operando>
+</Asignacion>
+</método>
+</verdadero>
+<falso>
+<decision>
+<condicion>
+XLST generado:
+<xsl: stylesheet>
+<xsl: template match= “/”>
+<xsl: apply-templates/>
+</xsl: template>
+</xsl: stylesheet>
+<xls: template match=”metodo”>
+<xls: apply-template select = “metodo”/>
+Function <xsl: value of select = “@nbmetodo”/><xls:template match: “asignacion”>
+</xls: template>
+Function m1(){
+<xls: apply templates select= “asignacion”/>
+</xsl template>
+3.- Programa de minería de datos a cada objeto le corresponde 1 y solo 1 conjunto de clases especificadas mediante un árbol de decisiones estructuradas
+<xloco>
+<usuario> <nbusuario> Eduardo </nbusuario>
+<ontologia><nbontologia> empresa</nbontologia>
+<idea> <nbidea> contador </nbidea>
+<atributos>
+<precio tipoatributo= “decimal”>
+<tasa tipoatributo= “decimal”>
+<cuota tipoatributo= “decimal”>
+<ISAN tipoatributo= “decimal”>
+<inferior tipoatributo= “decimal”>
+</atributos>
+XSLT generado:
+<métodos>
+<método> <nbmetodo> calcular ISAN </nbmetodos>
+<asignacion><atributo> precio </atributo>
+</asignación><operando> X </operando>
+<decision><condicion>precio menorque 200 </condicion>
+<verdadero>
+<método><nbmetodo>Segmento1 <nbmetodo>
+</asignación> <asignacion><atributo> tasa</nbasignacion>
+</asignación> <asignacion><atributo> cuota</nbasignacion>
+<operando> 0</operando>
+</asignación>
+</método>
+</verdadero>
+<falso>
+<método><nbmetodo> Prueba 2 </nbmetodo>
+<decisión><condición> Precio menorque 300 </condicion>
+<verdadero>
+<método><nbmetodo> Segmento 2 </nbmetodo>
+<asignación><atributo> tasa </atributos>
+<operando> 0.05</operando>
+<asignación><atributo> cuota </atributo>
+<operando> 4 </operando>
+</método>
+</verdadero>
+</falso>
+<método><nbmetodo>Segmento 3 </nbmetodo>
+<asignación><atributo>tasa</atributo>
+<operando> 0.07</operando>
+</asignación>
+<asignación><atributo> Cuota </atributos>
+<operando> 6 </operando>
+</asignación>
+</método>
+</falso>
+</decisión>
+</métodos>
+</falso>
+</decisión>
+</métodos>
+</falso>
+</decisión>
+</método>
+</métodos>
+ 
+
+
+
